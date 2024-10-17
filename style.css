@@ -1,0 +1,274 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: Hug (1,083.74px)px;
+    height: Hug (81px)px;
+    left: 178px;
+    padding: 20px 2px 20px 2px;
+    gap: 254px;
+    opacity: 0px;
+    background-color: white;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu a {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f9f8;
+}
+
+.hero-text .highlight {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #daf5e3;
+    color: #33a04d;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button-secondary {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.hero-images img {
+    
+    margin: 0 10px;
+    
+}
+#img1 {
+    width: 290px;
+    height: 320px;
+    gap: 0px;
+    border-radius: 20px ;
+    opacity: 0px;
+}
+#img2 {
+    width: 458px;
+    height: 320px;
+    gap: 0px;
+    border-radius: 20px ;
+    opacity: 0px;
+
+}
+#img3 {
+    width: 272px;
+    height: 320px;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0px;
+
+}
+
+
+/* Stats Section */
+.stats-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.stat-item h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+.stat-item p {
+    font-size: 16px;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial blockquote {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-size: 18px;
+}
+
+/* Clients Section */
+.clients-section {
+    background-color: #f5f9f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-logos img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+
+/* Features Section */
+.features-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 45%;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.feature h3 {
+    margin: 10px 0;
+}
+
+/* Case Studies Section */
+.case-studies {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.case-study {
+    display: flex;
+    margin: 20px 0;
+}
+
+.case-study-img img {
+    width: 50%;
+}
+
+.case-study-content {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #001f3f;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials-section .testimonial {
+    margin: 20px 0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ff6347;
+}
+
+.cta-section h2 {
+    color: white;
+}
+
+.cta-section .cta-button {
+    background-color: white;
+    color: #ff6347;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+}
