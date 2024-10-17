@@ -4,12 +4,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: rgba(255, 255, 255, 1);
     color: #333;
-    padding: 20px;
+    padding: 20px 20px;
 }
 
 a {
@@ -34,16 +33,13 @@ h1, h2, h3 {
     opacity: 0px;
     background-color: white;
 }
-
 .logo img {
     width: 150px;
 }
-
 .menu a {
     margin-left: 20px;
     font-weight: bold;
 }
-
 .cta-button {
     padding: 10px 20px;
     background-color: black;
@@ -51,7 +47,6 @@ h1, h2, h3 {
     border-radius: 25px;
     font-weight: bold;
 }
-
 .cta-button:hover {
     background-color: #333;
 }
@@ -62,7 +57,6 @@ h1, h2, h3 {
     padding: 50px 20px;
     background-color: #f5f9f8;
 }
-
 .hero-text .highlight {
     display: inline-block;
     padding: 5px 15px;
@@ -71,23 +65,19 @@ h1, h2, h3 {
     border-radius: 25px;
     margin-bottom: 20px;
 }
-
 .hero-text h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
-
 .hero-text p {
     font-size: 18px;
     margin-bottom: 30px;
 }
-
 .cta-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
 .cta-button-secondary {
     padding: 10px 20px;
     background-color: white;
@@ -95,7 +85,6 @@ h1, h2, h3 {
     border-radius: 25px;
     color: black;
 }
-
 .hero-images {
     display: flex;
     justify-content: center;
@@ -128,9 +117,7 @@ h1, h2, h3 {
     gap: 0px;
     border-radius: 20px;
     opacity: 0px;
-
 }
-
 
 /* Stats Section */
 .stats-section {
@@ -138,33 +125,27 @@ h1, h2, h3 {
     padding: 50px 20px;
     background-color: white;
 }
-
 .stats {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
-
 .stat-item h2 {
     font-size: 36px;
     color: #000000;
 }
-
 .stat-item p {
     font-size: 16px;
 }
-
 .qoute {
    
     color: #555;
 }
-
 .qoute blockquote {
     font-style: italic;
     font-size: 24px;
     margin-bottom: 10px;
 }
-
 .qoute cite {
     font-size: 18px;
 }
@@ -175,17 +156,14 @@ h1, h2, h3 {
     padding: 50px 20px;
     text-align: center;
 }
-
 .client-logos {
     display: flex;
     justify-content: space-around;
 }
-
 .client-logos img {
     width: 150px;
     margin: 0 20px;
 }
-
 
 /* Services Section */
 .services-section {
@@ -275,7 +253,7 @@ h1, h2, h3 {
     }
   }
  
-
+/* Case Section */
   .case-studies {
     text-align: center;
     margin-bottom: 50px;
@@ -361,6 +339,7 @@ li span{
     margin-left: 50px;
 }
 
+/* Testimonials Section */
 .testimonial-section {
     text-align: center;
     margin-bottom: 50px;
@@ -454,19 +433,149 @@ li span{
     background-color: #333;
 }
 
-
-
-
-
-/* Footer Section */
-footer {
-    background-color: #001f3f;
+/* Call to Action Section */
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001034;
     color: white;
-    padding: 30px 0;
-    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.footer-links a {
-    color: white;
-    margin: 0 15px;
+.cta-text {
+    padding: 40px;
+    flex: 1;
+}
+
+.cta-text h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cta-text p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #00d883;
+    color: #001034;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #00c673;
+}
+
+.cta-image {
+    flex: 1;
+}
+
+.cta-image img {
+    width: 317.58px;
+    height: 374.61px;
+    top: -2.58px;
+    left: -0.79px;
+    gap: 0px;
+    border-radius: 15.84px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+/* Footer Section */
+.footer {
+    background-color: #001034;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer h2 {
+    font-size: 48px;
+    color: #FFF;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.footer p {
+    color: #A6A6A6;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer .contact-info, .footer .expertise {
+    flex: 1;
+    min-width: 80px; /* Ensures sections don't become too narrow */
+}
+
+.footer .contact-info {
+    max-width: 50%; /* Contact info takes more space */
+}
+
+.footer .expertise {
+    max-width: 30%; /* Expertise section takes less space */
+}
+
+.footer .expertise ol {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .expertise ol li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #A6A6A6;
+}
+
+.footer .footer-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #A6A6A6;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    color: #A6A6A6;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer .contact-info, .footer .expertise {
+        max-width: 100%;
+    }
+
+    .footer h2 {
+        font-size: 36px;
+    }
 }
