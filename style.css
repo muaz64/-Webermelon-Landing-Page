@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: rgba(255, 255, 255, 1);
     color: #333;
-    padding: 20px 20px;
+    padding: 30px 10px;
 }
 
 a {
@@ -25,20 +25,35 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: Hug (1,083.74px)px;
-    height: Hug (81px)px;
-    left: 178px;
+    width: 1,083.74px;
+    height: 81px;
+    margin: 25px 50px 75px 100px;
     padding: 20px 2px 20px 2px;
     gap: 254px;
     opacity: 0px;
     background-color: white;
 }
 .logo img {
-    width: 150px;
+    width: 164.74px;
+    height: 30px;
+
+}
+.menu{
+    width: 264px;
+    height: 25px;
+    gap: 30px;
+    opacity: 0px;
+
 }
 .menu a {
     margin-left: 20px;
     font-weight: bold;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+
 }
 .cta-button {
     padding: 10px 20px;
@@ -57,16 +72,25 @@ h1, h2, h3 {
     padding: 50px 20px;
     background-color: #f5f9f8;
 }
+.hero-text{
+    width: 681px;
+    height: 321px;
+    margin-top: 20px;
+    margin-left: 379.5px;
+    gap: 32px;
+    opacity: 0px;
+
+}
 .hero-text .highlight {
     display: inline-block;
     padding: 5px 15px;
-    background-color: #daf5e3;
-    color: #33a04d;
+    background-color: #92F4AE;
+    color:#000000;
     border-radius: 25px;
     margin-bottom: 20px;
 }
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 .hero-text p {
@@ -121,6 +145,7 @@ h1, h2, h3 {
 
 /* Stats Section */
 .stats-section {
+    margin-top: 50px;
     text-align: center;
     padding: 50px 20px;
     background-color: white;
@@ -152,7 +177,8 @@ h1, h2, h3 {
 
 /* Clients Section */
 .clients-section {
-    background-color: #f5f9f8;
+    background-color: #ffffff;
+    margin-bottom: 50px;
     padding: 50px 20px;
     text-align: center;
 }
@@ -167,24 +193,23 @@ h1, h2, h3 {
 
 /* Services Section */
 .services-section {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    background: rgba(12, 10, 37, 1);
-    ;
+    align-items: flex-start;
+    padding: 40px 100px;
+    background-color: #0C0A25;
   }
   
   .services-intro {
     color: #f4f4f4;
-    width: 45%;
+    max-width: 300px;
   }
   
   .services-intro h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
+    line-height: 1.2;
   }
   
   .services-intro p {
@@ -194,11 +219,13 @@ h1, h2, h3 {
   
   .learn-more-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #00E38C;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
+    color: #0C0A25;
+    text-decoration: none;
     transition: background-color 0.3s;
   }
   
@@ -206,28 +233,39 @@ h1, h2, h3 {
     background-color: #00C77A;
   }
   
+  /* Trustpilot Section */
   .trustpilot {
     margin-top: 40px;
+    color: #ffffff;
   }
   
   
-  /* Services Grid */
-  .services-grid {
-    width: 45%;
+  
+  .trustpilot p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  /* Services Container using Flexbox */
+  .services-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
   }
   
   .service-box {
-    background-color: #D9F5F8;
-    border-radius: 15px;
     padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1;
   }
   
   .service-box h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
   
   .service-box p {
@@ -241,17 +279,33 @@ h1, h2, h3 {
     border-radius: 10px;
   }
   
+  /* Different Background Colors for Each Service Box */
+  .box1 {
+    background-color: #D9F5F8; /* Light blue */
+  }
+  
+  .box2 {
+    background-color: #C1F1D5; /* Light green */
+  }
+  
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     .services-section {
       flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
-    
-    .services-intro, 
-    .services-grid {
+  
+    .services-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .service-box {
       width: 100%;
     }
   }
+  
  
 /* Case Section */
   .case-studies {
@@ -338,6 +392,15 @@ li::marker {
 li span{
     margin-left: 50px;
 }
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.marquee-ul {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
 
 /* Testimonials Section */
 .testimonial-section {
@@ -405,7 +468,7 @@ li span{
 
 .view-review {
     font-size: 14px;
-    color: #0066cc;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
@@ -434,7 +497,7 @@ li span{
 }
 
 /* Call to Action Section */
-.cta-section {
+.cta1-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,24 +510,24 @@ li span{
     margin: 0 auto;
 }
 
-.cta-text {
+.cta1-text {
     padding: 40px;
     flex: 1;
 }
 
-.cta-text h2 {
+.cta1-text h2 {
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.cta-text p {
+.cta1-text p {
     font-size: 16px;
     color: #bbb;
     margin-bottom: 30px;
 }
 
-.cta-button {
+.cta1-button {
     display: inline-block;
     padding: 15px 25px;
     background-color: #00d883;
@@ -475,15 +538,15 @@ li span{
     text-decoration: none;
 }
 
-.cta-button:hover {
+.cta1-button:hover {
     background-color: #00c673;
 }
 
-.cta-image {
+.cta1-image {
     flex: 1;
 }
 
-.cta-image img {
+.cta1-image img {
     width: 317.58px;
     height: 374.61px;
     top: -2.58px;
