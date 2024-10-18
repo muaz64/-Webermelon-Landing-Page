@@ -24,44 +24,58 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1083.74px;
-    height: 81px;
-    margin-left: 178px;
-    margin-right: 100px;
-    padding: 20px 2px 20px 2px;
-    gap: 254px;
-    opacity: 0px;
-    background-color: white;
+    padding: 20px 20px;
+    background-color: #f5f9f8;
 }
+
 .logo img {
     width: 165px;
     height: 30px;
+    margin-left: 150px; /* Adjust margin based on your layout */
+}
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 20px;
 }
-.menu{
-    width: 265px;
-    height: 25px;
-    gap: 30px;
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between the links */
+    flex-grow: 1; /* Ensures the links are centered in the middle */
 }
-.menu a {
-    margin-left: 20px;
+
+.nav-links a {
     font-weight: bold;
     font-size: 16px;
-    font-weight: 400;
     line-height: 30px;
-    text-align: left;
-
+    text-decoration: none; /* Remove underline from links */
+    color: black;
 }
+
+.nav-links a:hover {
+    color: #333; /* Change color on hover */
+}
+
 .cta-button {
     padding: 10px 20px;
     background-color: black;
     color: white;
     border-radius: 25px;
     font-weight: bold;
+    cursor: pointer;
+    margin-right: 100px;
 }
+
 .cta-button:hover {
     background-color: #333;
 }
+
 
 /* Hero Section */
 .hero-section {
@@ -136,61 +150,58 @@ h1, h2, h3 {
     gap: 0px;
     border-radius: 20px;
 }   
-
-/* Stats Section */
-.stats-section {
+/* Stats and Clients Section */
+.stats-clients-section {
     margin-top: 50px;
-    text-align: center;
     padding: 50px 20px;
     background-color: white;
+    text-align: center; /* Center text for the entire section */
 }
+
 .stats {
     display: flex;
-    width: 960px;
-    height: 90px;
-    justify-content: space-around;
-    margin-bottom: 40px;
+    justify-content: space-around; /* Evenly distribute stat items */
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-left: 240px;
 }
+
 .stat-item h2 {
     font-size: 48px;
     font-weight: 600;
     color: #000000;
 }
+
 .stat-item p {
     font-size: 16px;
-    font-weight: 400px;
-}
-.qoute {
-    width: Fixed (835px);
-    height: 330px;
-    color: #555;
-    margin: 30px;
-    
-}
-.qoute blockquote {
-    font-style: italic;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.qoute cite {
-    font-size: 18px;
+    font-weight: 400;
 }
 
-/* Clients Section */
-.clients-section {
-    background-color: #ffffff;
+.quote {
+    width: 835px; /* Full width for the quote */
+    color: #555;
+    margin-left: 302px;
+    margin-right: 302px;
     margin-bottom: 50px;
-    padding: 50px 20px;
-    text-align: center;
 }
+
+.quote blockquote {
+    font-style: italic;
+    font-size: 24px;
+   
+}
+/* Clients Part */
 .client-logos {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
 }
+
 .client-logos img {
     width: 150px;
     margin: 0 20px;
 }
+
 
 /* Services Section */
 .services-section {
